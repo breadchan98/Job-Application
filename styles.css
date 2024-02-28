@@ -3,8 +3,54 @@ body {
     height: 100vh;
     margin: 0px;
     background-color: #748796;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 label {
     display: block;
     margin: 0.5rem 0;
+}
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+.inline {
+    /*unset removes the previous rule for input*/
+    width: unset;
+    margin-top: 0;
+    margin-right: 0.5em;
+    margin-left: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+input, textarea {
+    background-color: #515e69;
+    border: 1px solid #515e69;
+    color: white;
+}
+.top {
+    margin: 1em auto;
+    text-align: center;
+}
+.jobdesc {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+form {
+    margin: auto auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+}
+fieldset {
+    border: 0;
+    border-bottom: 2px solid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+fieldset:last-of-type {
+    border-bottom: none;
 }
