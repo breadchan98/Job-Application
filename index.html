@@ -83,7 +83,7 @@
             </fieldset>
             <fieldset>
                 <p>Please enter your age (years):</p>
-                <label>Input your age (years): <input type="number" min="13" max="120" /></label>
+                <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age"/></label>
             </fieldset>
             <fieldset>
                 <p>Are you authorized to work in the US?</p>
@@ -96,17 +96,21 @@
                 <label for="novisa"><input type="radio"name="sponsor" id="novisa">No</label>
             </fieldset>
             <fieldset>
-                <label>Resume: <input type="file"></label>
-                <label>Cover Letter: <input type="file"></label>
+                <label for="resume">Resume: <input type="file" id="resume"></label>
+                <label for="cv">Cover Letter: <input type="file" id="cv"></label>
             </fieldset>
             <fieldset>
-                <label>How did you hear about us?<select></label>
+                <label for="referrer">How did you hear about us?<select id="referrer"></label>
                     <option value="">(select one)</option>
                     <option value="1">Linkedin/Indeed</option>
                     <option value="2">You typed "software engineer jobs"</option>
                     <option value="3">Reddit or forum/social media postings</option>
                     <option value="4">Others</option>
                 </select>
+            </fieldset>
+            <fieldset>
+                <label for="bio">What makes you fit for the position? Tell us about yourself.</label>
+                <textarea id="bio"></textarea>
             </fieldset>
             <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions">By accessing or using this website, 
                 you agree to be bound by these terms and conditions of use. 
